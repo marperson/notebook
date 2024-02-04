@@ -13,3 +13,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+# page tree
+nav:
+  - My notes:
+      - 2024-01: 2024_01_learning.md
+      - 2024-02: 2024_02_learning.md
