@@ -2,7 +2,7 @@ site_name: My Docs
 
 ## Configuration
 theme:
-  name: material
+  name: readthedocs
 ##  custom_dir: build/overrides
 #  language: zh
 ##  features:
