@@ -10,6 +10,8 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
+      - name: install tree
+        run: sudo apt-get install -y tree
       - name: Checkout main
         uses: actions/checkout@v4
 
@@ -24,7 +26,5 @@ jobs:
 #      - run: ls -al ./docs
 #      - working-directory: ./docs
 #        run: mkdocs gh-deploy --force
-      - run: apt-get install tree
-      - run: tree .
       - run: mkdocs gh-deploy --force
       - run: tree.
