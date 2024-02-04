@@ -1,4 +1,4 @@
-name: ci 
+name: Build and deploy mkdocs
 on:
   push:
     branches:
@@ -26,5 +26,8 @@ jobs:
 #      - run: ls -al ./docs
 #      - working-directory: ./docs
 #        run: mkdocs gh-deploy --force
-      - run: mkdocs gh-deploy --force --verbose
-      - run: tree .
+      - run: |
+          pwd
+          tree .
+          mkdocs gh-deploy --force --verbose
+          tree .
