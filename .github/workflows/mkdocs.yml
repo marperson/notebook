@@ -26,5 +26,5 @@ jobs:
 #      - run: ls -al ./docs
 #      - working-directory: ./docs
 #        run: mkdocs gh-deploy --force
-      - run: mkdocs gh-deploy --force
-      - run: tree.
+      - run: mkdocs gh-deploy --force --verbose
+      - run: tree .
