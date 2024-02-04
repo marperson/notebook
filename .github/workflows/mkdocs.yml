@@ -17,11 +17,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: pip install mkdocs
+#      - run: pip install mkdocs
       - run: pip install mkdocs-material
-      - run: pwd
-      - run: ls -al
-      - run: ls -al ./docs
+#      - run: pwd
+#      - run: ls -al
+#      - run: ls -al ./docs
 #      - working-directory: ./docs
 #        run: mkdocs gh-deploy --force
-      -  run: mkdocs gh-deploy --force
+      - run: apt-get install tree
+      - run: tree .
+      - run: mkdocs gh-deploy --force
+      - run: tree.
